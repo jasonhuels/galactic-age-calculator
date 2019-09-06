@@ -16,10 +16,9 @@ _Website where users can input their age in Earth years and get their age on oth
 |User inputs a non-numerical value and receives an error message| "Thiry-two"| "Please enter your age as a numerical value"|
 |User inputs an age less than 1 and receives an error message | "0"| "Please enter your age as a numerical value 1 or higher"|
 |User inputs a their age in Earth years and gets their age on a single alternate planet|"32"|"Age on Mercury: 132"|
-|User inputs their average life expectancy for their demographic to determine their years left to live on alternate planets |"85"|"Years left to live on Mercury: -47"|
-|User inputs a their age in Earth years and gets their age on a single alternate planet and their remaining life expectancy on that planet|"32"|"Age on Mercury: 132, Years left to live on Mercury: -47 years"|
-|Program changes negative years left to live into years past your life expectancy|"32"|"Age on Mercury: 132, You outlived your life expectancy on Mercury by: 47 years"|
-|User inputs a their age in Earth years and gets their age and life expectancy on multiple planets|"32"|"Age on Mercury: 132, You outlived your life expectancy on Mercury by: 47 years, Age on Venus: 52, Years left to live on Venus: 33 years"|
+|User inputs a their age in Earth years and gets their age on a single alternate planet and their remaining life expectancy on that planet|"32"|"Age on Mercury: 132, Your average life expectancy in Mercury years is: 352, Years left to live on Mercury: 220 years"|
+|If user has lived beyond their life expectancy, output will be formatted to tell them how many years past their life expectancy they lived|"86"|"Age on Mercury: 356, Your average life expectancy in Mercury years is: 352, You outlived your life expectancy on Mercury by: 4 years"|
+|User inputs a their age in Earth years and gets their age and life expectancy on multiple planets|"32"|"Age on Mercury: 132, Your average life expectancy in Mercury years is: 352, Years left to live on Mercury: 220 years", "Age on Venus: 52, Your average life expectancy in Venus years is: 137, Years left to live on Venus: 85 years"|
 
 
 ## Setup/Installation Requirements
