@@ -4,6 +4,10 @@ h1 {
   font-style: italic;
 }
 
+html {
+  background-color: black;
+}
+
 .jumbotron {
   background-image: url('img/space_bg.png');
   background-repeat: no-repeat;
@@ -19,6 +23,7 @@ body {
   background-size: cover;
   color: yellow;
   text-align: center;
+  height: 1080px;
 }
 
 .well {
@@ -42,9 +47,8 @@ img {
 table {
   margin-left: auto;
   margin-right: auto;
-  font-family: arial, sans-serif;
+  font-family: sans-serif;
   border-collapse: collapse;
-  width: 100%;
   color: black;
   width: 80%;
 }
@@ -72,4 +76,9 @@ tr:nth-child(odd) {
   background-color: darkred;
   color: red;
   display: none;
+}
+
+#cosmos {
+  width: 100%;
+  opacity: 0.5;
 }

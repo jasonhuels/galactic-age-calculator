@@ -38,8 +38,8 @@ function main() {
         } else {
           yearsLeft = `You'll most likely live another ${lifeExpectancy - earthAge} years. ${extra}`;
         }
-        $("#earth-age").html(earthAge);
-        $("#earth-life").html(lifeExpectancy);
+        $("#earth-age").html(earthAge + " years");
+        $("#earth-life").html(lifeExpectancy + " years");
         $("#earth-left").html(yearsLeft);
 
         for(let i=0; i<PLANETS.length; i++) {
@@ -50,8 +50,8 @@ function main() {
           } else {
             extra = FAR;
           }
-          $(`#${PLANETS[i]}-age`).html(galactic.ages[i]);
-          $(`#${PLANETS[i]}-life`).html(galactic.expectancies[i]);
+          $(`#${PLANETS[i]}-age`).html(galactic.ages[i] + " years");
+          $(`#${PLANETS[i]}-life`).html(galactic.expectancies[i] + " years");
           if(galactic.ages[i] >= galactic.expectancies[i]) {
             $(`#${PLANETS[i]}-left`).html(`You've out-lived your life expectancy by ${galactic.ages[i] - galactic.expectancies[i]} years. ${extra}`);
           } else {
@@ -64,7 +64,6 @@ function main() {
       }
 
       $("#results").dblclick(function() { $(this).slideUp(); });
-
     });
   });
 }
