@@ -8,7 +8,7 @@ import { loadImages } from './loadImages.js';
 loadImages();
 main();
 
-export function main() {
+function main() {
   $(function() {
     $("#form").submit(function(event) {
       event.preventDefault();

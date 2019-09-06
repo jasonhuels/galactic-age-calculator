@@ -6,7 +6,7 @@
 
 ## Description
 
-_Website where users can input their age in Earth years and get their age on other planets, the number of years they have left to live on that planet, and if they have surpassed their life expectancy on that planet let them know how many years past their life expectancy they've lived on that planet _
+_Website where users can input their age in Earth years and get their age on other planets, the number of years they have left to live on that planet, and if they have surpassed their life expectancy on that planet let them know how many years past their life expectancy they've lived on that planet_
 
 ## Specifications
 
@@ -21,11 +21,11 @@ _Website where users can input their age in Earth years and get their age on oth
 |User inputs a their age in Earth years and gets their age and life expectancy on multiple planets|"32", "85"|"Age on Mercury: 132, Your average life expectancy in Mercury years is: 352, Years left to live on Mercury: 220 years", "Age on Venus: 52, Your average life expectancy in Venus years is: 137, Years left to live on Venus: 85 years"|
 
 
-## Setup/Installation Requirements
+## Setup/Installation Requirements_
 
-*_Clone this repository_
-*_Run "npm install" command to install necessary packages_
-*_Open index.html in browser of your choosing_
+* _Clone this repository_
+* _Run "npm install" command to install necessary packages_
+* _Run "npm run start" command to open application in browser_
 
 ## Known Bugs
 
