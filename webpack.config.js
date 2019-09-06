@@ -29,6 +29,11 @@ module.exports = {
           'css-loader'
         ]
       },
+      //new
+      {
+        test: /\.(png|jpg)$/,
+        loader: 'url-loader'
+      },
       {
         test: /\.js$/,
         exclude: /node_modules/,

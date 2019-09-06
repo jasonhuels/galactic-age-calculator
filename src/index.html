@@ -8,13 +8,77 @@
       <div class="jumbotron">
         <h1>Galactic Age Calculator</h1>
       </div>
-      <form id="form" action="index.html" method="post">
-        <label for="earth-age">Age in Earth years:</label>
-        <input type="text" name="" placeholder="Earth age"><br>
-        <label for="earth-age">Life expectancy in Earth years:</label>
-        <input type="text" name="" placeholder="Life expectancy"><br>
-        <button type="submit" name="button">Submit</button>
-      </form>
+      <div class="well">
+        <form id="form" action="index.html" method="post">
+          <label for="earth-age">Age in Earth years:</label>
+          <input id="earth-age" type="number" placeholder="Earth age" required><br>
+          <label for="life-expectancy">Life expectancy in Earth years:</label>
+          <input id="life-expectancy" type="number" placeholder="Life expectancy" required><br>
+          <button type="submit" class="btn btn-light">Calculate</button>
+        </form>
+      </div>
+      <div id="results" class="well">
+        <div id="earth" class="">
+          <table>
+            <tr>
+              <th></th>
+              <th>Planet</th>
+              <th>Your Age</th>
+              <th>Your Life Expectancy</th>
+              <th>Your Years Left</th>
+            </tr>
+            <tr>
+              <td class="table-img"> <img id="earth-image" alt="earth"> </td>
+              <td>Earth</td>
+              <td id="earth-age"></td>
+              <td id="earth-life"></td>
+              <td id="earth-left"></td>
+            </tr>
+            <tr>
+              <td class="table-img"> <img id="mercury-image" alt="mercury"> </td>
+              <td>Mercury</td>
+              <td id="mercury-age"></td>
+              <td id="mercury-life"></td>
+              <td id="mercury-left"></td>
+            </tr>
+            <tr>
+              <td class="table-img"> <img id="venus-image" alt="venus"> </td>
+              <td>Venus</td>
+              <td id="venus-age"></td>
+              <td id="venus-life"></td>
+              <td id="venus-left"></td>
+            </tr>
+            <tr>
+              <td class="table-img"> <img id="mars-image" alt="mars"> </td>
+              <td>Mars</td>
+              <td id="mars-age"></td>
+              <td id="mars-life"></td>
+              <td id="mars-left"></td>
+            </tr>
+            <tr>
+              <td class="table-img"> <img id="jupiter-image" alt="jupiter"> </td>
+              <td>Jupiter</td>
+              <td id="jupiter-age"></td>
+              <td id="jupiter-life"></td>
+              <td id="jupiter-left"></td>
+            </tr>
+          </table>
+
+        </div>
+        <div id="mercury" class="">
+
+        </div>
+        <div id="venus" class="">
+
+        </div>
+        <div id="mars" class="">
+
+        </div>
+        <div id="jupiter" class="">
+
+        </div>
+
+      </div>
 
     </div>
 
