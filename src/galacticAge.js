@@ -2,7 +2,7 @@ export class GalacticAge {
   constructor(earthAge, lifeExpectancy) {
     this.earthAge = earthAge;
     this.lifeExpectancy = lifeExpectancy;
-    
+
     this.ages = [this.mercuryYears(this.earthAge), this.venusYears(this.earthAge), this.marsYears(this.earthAge), this.jupiterYears(this.earthAge)];
 
     this.expectancies = [this.mercuryYears(this.lifeExpectancy), this.venusYears(this.lifeExpectancy), this.marsYears(this.lifeExpectancy), this.jupiterYears(this.lifeExpectancy)];
@@ -10,7 +10,7 @@ export class GalacticAge {
 
   earthDays(earthYears) {
     let output = 0;
-    if(parseInt(earthYears) >= 1) {
+    if(parseInt(earthYears)) {
       output = parseInt(earthYears) * 365;
     }
     return output;

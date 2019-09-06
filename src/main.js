@@ -22,7 +22,7 @@ export function main() {
       if(earthAge >= 1 && lifeExpectancy >=1) {
         $("#error").slideUp();
         if(earthAge >= lifeExpectancy) {
-          yearsLeft = `You've out lived your life expectancy by ${earthAge - lifeExpectancy} years.`;
+          yearsLeft = `You've out-lived your life expectancy by ${earthAge - lifeExpectancy} years.`;
         } else {
           yearsLeft = `You'll most likely live another ${lifeExpectancy - earthAge} years.`;
         }
@@ -34,7 +34,7 @@ export function main() {
           $(`#${PLANETS[i]}-age`).html(galactic.ages[i]);
           $(`#${PLANETS[i]}-life`).html(galactic.expectancies[i]);
           if(galactic.ages[i] >= galactic.expectancies[i]) {
-            $(`#${PLANETS[i]}-left`).html(`You've out lived your life expectancy by ${galactic.ages[i] - galactic.expectancies[i]} years.`);
+            $(`#${PLANETS[i]}-left`).html(`You've out-lived your life expectancy by ${galactic.ages[i] - galactic.expectancies[i]} years.`);
           } else {
             $(`#${PLANETS[i]}-left`).html(`You'll most likely live another ${galactic.expectancies[i] -galactic.ages[i]} years.`);
           }
