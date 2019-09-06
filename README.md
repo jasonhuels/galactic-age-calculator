@@ -12,9 +12,9 @@ _Website where users can input their age in Earth years and get their age on oth
 
 | Behavior | Input | Output|
 |:------|:---------:|:------:|
-|User inputs an empty string and receives an error message | "" | "Please enter your age as a numerical value" |
-|User inputs a non-numerical value and receives an error message| "Thiry-two", "eighty-five"| "Please enter your age as a numerical value"|
-|User inputs an age less than 1 and receives an error message | "0", "85"| "Please enter your age as a numerical value 1 or higher"|
+|User inputs an empty string and receives an error message | "" | "Inputs must be a whole number greater than 0" |
+|User inputs a non-numerical value and receives an error message| "Thiry-two", "eighty-five"| "Inputs must be a whole number greater than 0"|
+|User inputs an age less than 1 and receives an error message | "0", "85"| "Inputs must be a whole number greater than 0"|
 |User inputs a their age in Earth years and gets their age on a single alternate planet|"32", "85"|"Age on Mercury: 132"|
 |User inputs a their age in Earth years and gets their age on a single alternate planet and their remaining life expectancy on that planet|"32", "85"|"Age on Mercury: 132, Your average life expectancy in Mercury years is: 352, Years left to live on Mercury: 220 years"|
 |If user has lived beyond their life expectancy, output will be formatted to tell them how many years past their life expectancy they lived|"86", "85"|"Age on Mercury: 356, Your average life expectancy in Mercury years is: 352, You outlived your life expectancy on Mercury by: 4 years"|
