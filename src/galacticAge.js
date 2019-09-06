@@ -4,27 +4,27 @@ export class GalacticAge {
     this.lifeExpectancy = lifeExpectancy;
   }
 
-  earthDays() {
+  earthDays(earthYears) {
     let output = 0;
-    if(parseInt(this.earthAge) >= 1) {
-      output = parseInt(this.earthAge) * 365;
+    if(parseInt(earthYears) >= 1) {
+      output = parseInt(earthYears) * 365;
     }
     return output;
   }
 
-  mercuryAge() {
-    return Math.floor(this.earthDays() / 88);
+  mercuryYears(earthYears) {
+    return Math.floor(this.earthDays(earthYears) / 88);
   }
 
-  venusAge() {
-    return Math.floor(this.earthDays() / 225);
+  venusYears(earthYears) {
+    return Math.floor(this.earthDays(earthYears) / 225);
   }
 
-  marsAge() {
-    return Math.floor(this.earthDays() / 687);
+  marsYears(earthYears) {
+    return Math.floor(this.earthDays(earthYears) / 687);
   }
 
-  jupiterAge() {
-    return Math.floor(this.earthDays() / 4333);
+  jupiterYears(earthYears) {
+    return Math.floor(this.earthDays(earthYears) / 4333);
   }
 }
