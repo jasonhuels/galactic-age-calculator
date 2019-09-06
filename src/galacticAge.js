@@ -11,4 +11,20 @@ export class GalacticAge {
     }
     return output;
   }
+
+  mercuryAge() {
+    return Math.floor(this.earthDays() / 88);
+  }
+
+  venusAge() {
+    return Math.floor(this.earthDays() / 225);
+  }
+
+  marsAge() {
+    return Math.floor(this.earthDays() / 687);
+  }
+
+  jupiterAge() {
+    return Math.floor(this.earthDays() / 4333);
+  }
 }
